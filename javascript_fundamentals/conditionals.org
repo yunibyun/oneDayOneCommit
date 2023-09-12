@@ -1,0 +1,71 @@
+*Conditionals
+**Writing Conditional Statements / If statements
+***Description
+An if statement has two parts, the test expression (the code that immediately follows the if which goes in parentheses),
+and then expression (this code belolngs in curly braces {} after the if expression). 
+The then expression will only run when the if expression is truthy.
+
+#+begin_src markdown 
+``javascript
+if (3 === 3) {
+    //The code below will run if the above statement is true
+    console.log("3 is equal to three!")}
+#+end_src
+
+The if statement above allows to specify what should happen if particular expression evaluates to true.
+You can also chain additional text expressions onto the if statement by using a else if statement.
+
+#+begin_src markdown 
+``javascript
+function testMath() {
+    let x = 2 + 3;
+
+    if (x === 3) {
+        console.log("We have three.");
+    } else if (x === 4) {
+        //this code will run if the above statement is true
+        console.log("We have four."); 
+    } else if (x === 5) {
+        //this code will run if the above statement is true
+        console.log("We have five.");
+    }
+}
+
+testMath(); // => We have five.
+#+end_src
+
+The else if and if statements do not provide the option to specify something else that should happen in the event that all of the above expressions evaluate to be falsey. 
+
+#+begin_src markdown 
+``javascript 
+function testMath() {
+    let x = 19;
+    if (x === 3) {
+        console.log("We have three.");
+    } else if (x === 4) {
+        console.log("We have four.");
+    } else {
+        console.log("This will return if everything above is falsey.")
+    };
+
+testMath(); // => This will return if everything above is falsey.
+#+end_src
+
+#+begin_src markdown
+``javascript 
+function testMath(x) {
+    if (x === "math") {
+        if (x === "math" && x[0] === "m") {
+            conmsole.log ("This got confusing fast");
+        } else {
+            console.log ("This is not math");
+        }
+    } else { 
+        console.log ("This is for sure not math!");
+    } else {
+        console.log ("This will return if everything above is false");
+    }
+};
+
+testMath("math"); // => This got confusing fast
+
