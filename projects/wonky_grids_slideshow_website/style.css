@@ -1,0 +1,28 @@
+/*general setting*/
+
+* {
+    box-sizing: border-box;
+    /* 
+    Border-box tells the browser to account for any border and padding in the values I specify for an element's width and height. 
+    So setting the border-box is guaranteeing that the element size includes borders and padding.
+    */
+    margin: 0;
+}
+
+@font-face {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+html {
+    font-size: 16px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
