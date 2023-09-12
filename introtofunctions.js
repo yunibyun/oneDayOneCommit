@@ -128,7 +128,7 @@ function add(firstParamenter, secondParameter) {
 }
 
 // the add function declares two parameters: firstParameter and secondParameter 
-> add (1, 2); // =>3
+ add (1, 2); // =>3
 
 /* extra arguments
 In Javascript a function will not throw an error if the number of arguments
@@ -144,4 +144,70 @@ function addAgain (firstParameter, secondParameter) {
 add(1, 2, 17, 14); // => 3
 
 
-//*
+//* Not enough arguments
+function addTheParameters (firstParamenter, secondParameter) {
+    console.log(firstParamenter + secondParameter);
+}
+
+add(5) // => NaN
+
+/* 
+1. firstParameter was set to equal to the first passed in argument which in the above case, 5
+2. Since there is no second argument, secondParameter is set to undefined.
+3. The function then tries to add 5 to undefined, So we get NaN (which means Not a Number) printed to the console */
+
+
+function addThreeNumbers (num1, num2, num3) {
+    return num1 + num2 + num3;
+}
+
+addThreeNumbers (1,2,3,4); // 6
+addThreeNumbers (1,2); // NaN
+
+/* 
+Write a function goodbye(name) that takes in a string name and 
+returns a string saying "bye" to that name. 
+*/
+
+function goodbye (name) {
+    return `bye, ${name}!`;
+}
+
+console.log (goodbye("Felicia")); // bye, Felicia!
+console.log (goodbye("Billy")); // bye, Billy!
+
+
+/* Practice typing the syntax for functions. 
+Write functions with different messages and console log them. */
+
+function sayHelloAgain(name) {
+    let msg = `Hello, ${name}!. How are you today?`;
+    return msg;
+}
+
+console.log(sayHelloAgain("World"));
+
+
+function calculateAverageNumber (num1, num2, num3) {
+    let calculatedAverage = (num1 + num2 + num3) / 3;
+    return calculatedAverage;
+}
+
+console.log (calculateAverageNumber(5,14,83));
+
+function plusFive (num) {
+    return num + 5;
+}
+
+console.log(plusFive(5));
+
+
+function isCool(string) {
+    let coolSentence   = `${string} is cool!`;
+    console.log(coolSentence);
+    return coolSentence;
+}
+
+console.log(isCool("Javascript"));
+
+
