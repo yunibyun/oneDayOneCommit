@@ -119,3 +119,29 @@ calculateAverageAgain(19,43); // returns 62
 We always name our function and variables with calmelCase for multiple words.
 e.g.) tipCalculator, currentNumber, puppyPartyFinder */
 
+/* difference between parameters and arguments
+Paramenters are comma seperated variables specified as part of a function definition.
+Arguments are values passed to the function when it's invoked. */
+
+function add(firstParamenter, secondParameter) {
+    console.log(firstParameter + secondParameter);
+}
+
+// the add function declares two parameters: firstParameter and secondParameter 
+> add (1, 2); // =>3
+
+/* extra arguments
+In Javascript a function will not throw an error if the number of arguments
+passed during a function invocation is different than the number of parameters
+listed during function declaration. */
+
+function addAgain (firstParameter, secondParameter) {
+    console.log(firstParameter + secondParameter);
+}
+
+// this will ignore the extra arguments
+// the first two arguments passed in will be assigned to the first two parameters
+add(1, 2, 17, 14); // => 3
+
+
+//*
