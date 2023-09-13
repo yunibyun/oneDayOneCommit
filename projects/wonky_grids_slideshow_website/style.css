@@ -26,6 +26,12 @@ header {
     align-items: center;
 }
 
+h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;    
+}
+
 nav {
     display: flex;
     gap: 1rem;
@@ -34,27 +40,18 @@ nav {
     */
 }
 
-a {
+nav a {
     color: black;
+    text-underline-offset: 2px;
+    /* The text-underline-offset property in CSS sets the distance of text underlines from their initial position.*/
 }
 
 a:visited {
     color: black;
 }
 
-a: hover {
+a:hover {
     color: gray;
-}
-
-nav.a {
-    text-underline-offset: 2px;
-    /* The text-underline-offset property in CSS sets the distance of text underlines from their initial position.*/
-}
-
-h1 {
-    font-size: 1rem;
-    font-weight: 600;
-    font-style: normal;    
 }
 
 section {
@@ -63,17 +60,18 @@ section {
     gap: 0;
     width: 100%;
     padding: 1rem 0.5rem;
-    cursor: e-resize
-    transition: grid-template-columns: 0.4s;
+    cursor: e-resize;
+    transition: grid-template-columns 0.4s;
 }
 
 section div {
     overflow: hidden;
+    /* hide anything that would usually go outside of the space */
     opacity: 1;
     transition: opacity 0.4s;
 }
 
-section.div.hide {
+section div.hide {
     opacity: 0;
 }
 
