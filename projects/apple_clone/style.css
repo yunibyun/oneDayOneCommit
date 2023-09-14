@@ -148,6 +148,7 @@ footer .footer-wrapper .footer-nav-wrapper ul li.footer-nav-bold {
 }
 footer .footer-wrapper .footer-nav-wrapper a {
   text-decoration: none;
+  color: #999;
 }
 footer .footer-wrapper .footer-nav-wrapper a:hover {
   text-decoration: underline;
