@@ -44,6 +44,7 @@ $secondary-color: #F2F2F2;
 $link-color: #08c;
 $footer-link-color: #666;
 $footer-info-color: #999;
+$border-color: rgba(102,102,102,0.2);
 
 /* finished declaring variables */
 
@@ -215,7 +216,8 @@ footer {
         max-width: 36vw;
         margin-top: 20px;
             .col-1 {
-                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: $border-color solid 0.6px;
                 p {
                     color: $footer-info-color;
                 }
@@ -223,7 +225,7 @@ footer {
                     text-decoration: none;
                     color: $link-color;
                     &:hover {
-                        color: $footer-link-color;
+                        color: $footer-link-color !important;
                         text-decoration: underline;
                     }
                     &:visited {
@@ -235,12 +237,18 @@ footer {
                 display: inline-flex;
                 gap: 20px;
                 color: $footer-info-color;
+                padding-top: 10px;
 
                 .policy-links {
                     a {
                         color: $footer-link-color;
                         text-decoration: none;
                         padding: 0 8px;
+                        border-right: $border-color solid 0.6px;
+                        
+                        &:last-child {
+                            border-right: none;
+                        }
 
                         &:hover {
                             text-decoration: underline;

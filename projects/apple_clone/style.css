@@ -166,7 +166,8 @@ footer .footer-info-wrapper {
   margin-top: 20px;
 }
 footer .footer-info-wrapper .col-1 {
-  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: rgba(102, 102, 102, 0.2) solid 0.6px;
 }
 footer .footer-info-wrapper .col-1 p {
   color: #999;
@@ -176,7 +177,7 @@ footer .footer-info-wrapper .col-1 a {
   color: #08c;
 }
 footer .footer-info-wrapper .col-1 a:hover {
-  color: #666;
+  color: #666 !important;
   text-decoration: underline;
 }
 footer .footer-info-wrapper .col-1 a:visited {
@@ -186,11 +187,16 @@ footer .footer-info-wrapper .col-2 {
   display: inline-flex;
   gap: 20px;
   color: #999;
+  padding-top: 10px;
 }
 footer .footer-info-wrapper .col-2 .policy-links a {
   color: #666;
   text-decoration: none;
   padding: 0 8px;
+  border-right: rgba(102, 102, 102, 0.2) solid 0.6px;
+}
+footer .footer-info-wrapper .col-2 .policy-links a:last-child {
+  border-right: none;
 }
 footer .footer-info-wrapper .col-2 .policy-links a:hover {
   text-decoration: underline;
