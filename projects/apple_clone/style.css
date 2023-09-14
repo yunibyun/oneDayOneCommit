@@ -200,4 +200,14 @@ footer .footer-info-wrapper .col-2 .policy-links a:visited {
 }
 footer .footer-info-wrapper .col-2 .country {
   align-items: flex-end;
+}
+footer .footer-info-wrapper .col-2 .country a {
+  text-decoration: none;
+  color: #666;
+}
+footer .footer-info-wrapper .col-2 .country a:hover {
+  text-decoration: underline;
+}
+footer .footer-info-wrapper .col-2 .country a:visited {
+  color: #666;
 }/*# sourceMappingURL=style.css.map */

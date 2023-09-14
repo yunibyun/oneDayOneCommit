@@ -253,6 +253,17 @@ footer {
                 }
                 .country {
                     align-items: flex-end;
+                    a {
+                        text-decoration: none;
+                        color: $footer-link-color;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }   
+                        &:visited {
+                            color: $footer-link-color;
+                        }   
+                    }
                 }
             }
     }
