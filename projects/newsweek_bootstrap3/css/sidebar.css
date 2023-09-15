@@ -1,0 +1,100 @@
+/* headline- title */
+
+/* here works weird. When I added the class on h2, the style didn't really
+worked, and it worked when I added the class on a. */
+
+.headlines-title {
+    font-size: 20 px;
+    letter-spacing: 0.2px;
+    color: red;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+/* put breakpoints in order to make the headlines-title larger for some screen sizes */
+
+@media only screen and (min-width: 1200px){
+    .headlines-title {
+        font-size: 22px;
+    }
+}
+
+
+/* working with lists */
+
+.bullet-list {
+    padding: 25px 0px;
+}
+
+.bullet {
+    position: relative;
+    padding: 15px;
+    top: 15px;
+    left: -25px;
+    color: red;
+    list-style-position:inside;
+/* 
+The list-style-position property specifies the position of the list-item markers (bullet points).
+list-style-position: inside; means that the bullet points will be inside the list item. As it is part of the list item, 
+it will be part of the text and push the text at the start:
+*/
+    list-style-type: square;
+}
+
+.bullet a {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.bullet-list li {
+    border-top: 1px solid #f2f2f2;
+}
+
+
+/* remove the bullet of last li element */
+.bullet-list li:last-child {
+    list-style-type: none; 
+    border-top: 0;
+    }
+
+
+.see-all {
+    display: block;
+    text-align: center;
+}
+
+.see-all-headlines {
+    background-color: #f2f2f2;
+    color: gray;
+    font-size: 18px;
+    line-height: 50px;
+    /* making the button size bigger */
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.see-all-headlines:hover {
+    opacity: 0.5;
+}
+
+/* add breakpoints for smaller screens */
+@media only screen and (max-width: 992px){
+    .sidebar {
+        border-top: 1px solid #f2f2f2
+        background-color: #f7f7f7;
+    }
+    .headlines-title {
+        text-align: center;
+        font-size: 20px;
+    }
+    .bullet {
+        text-align:center;
+    }
+    .see-all-headlines {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}

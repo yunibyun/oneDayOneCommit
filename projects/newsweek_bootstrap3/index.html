@@ -3,7 +3,6 @@
   <!-- Head -->
   <head>
     <title>Newsweek</title>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -76,115 +75,89 @@
     </nav>
 
     <div class="container-fluid main-content">
-      <div class="row">
+      <div class="row">     
         <!--Main-->      
-        <div class="col-xs-12 col md-9 main-wrapper">
-          <div class="content-background">
-            <img src="/images/main/main_main.jpg" alt="largest-img">
-          </div>
-          <div class="info-wrapper">
-            <h2 class="headline-country">
-              <a href="#">U.S.</a>
-            </h2>
-            <h2 class="headline">
-              <a href="#">JUSTICE DEPT. TO FORCE REFORMS</a>
-            </h2>
-            <div class="summary">
-              “The residents of Ferguson have waited nearly a year for their city to adopt an agreement.”
-            </div>
-          </div>
-
-          <!-- dividing horizontal line -->
-          <hr class="main-sub-divider">
-
-          <!-- main-sub section -->
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 sub-box">
-              <img src="/images/main/main1.png" alt="img">
-              <div class="sub-info">
-                <h2 class="headline-country">
-                  <a href="#">U.S.</a>
-                </h2>
-                <h2 class="headline">
-                  <a href="#">
-                    GRAVITATIONAL WAVES DETECTED, PROVING EINSTEIN RIGHT
-                  </a>
-                </h2>
-                <div class="summary">
-                  “This [was] truly a scientific moon shot, and we landed on the moon.”
+            <div class="col-xs-12 col-md-9 main wrapper">
+              <div class="content-background">
+                <img src="images/main/main_main.jpg" class="img-responsive">
+                <div class="info-wrapper">                  
+                  <h2>
+                    <a href="#" class="headline-country">U.S.</a>
+                  </h2>
+                  <h2><a href="#" class="headline">JUSTICE DEPT. TO FORCE REFORMS</a></h2>
+                  <div class="summary">“The residents of Ferguson have waited nearly a year for their city to adopt an agreement.”
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 sub-box sponsor">
-              <div class="background">
-                <img src="/images/main/main2.jpg" alt="img">
-              </div>
-              <div class="sub-info">
-                <h2 class="headline-upper">
-                  <a href="#">SPONSOR INSIGHT</a>
-                </h2>
-                <h2 class="headline">
-                  <a href="#">THE BEST UNIVERSITIES OF ASIA</a>
-                </h2>
-                <div class="summary">
-                  "Universities from Asia and Europe are challenging the best schools in the USA. When it comes to choosing the right school then, the options have never been more diverse…"
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Side Menu -->
-          <div class="side con-xs-12 col-md-3">
-            <div class="side-nav">
-              <div class="list-wrapper">
-                <div class="headline-title">Latest headlines</div>
-                <ul class="bullet-list">
-                  <li class="bullet">
-                    <a class="bullet-a" href="#">Harriet Harman: The New Law on Gender Pay was Labour's</a>
-                  </li>
-                  <li class="bullet">
-                    <a class="bullet-a" href="#">French Court Will Hear Facebook Nude Painting Case</a>
-                  </li>
-                  <li class="bullet">
-                    <a class="bullet-a" href="#">Rolf Harris Faces Seven Indecent Assault Charges</a>
-                  </li>
-                  <li>
-                    <a class="bullet-a" href="#">U.K. Airbnb Host Rejects Israeli for 'Occupying Lands'</a>
-                  </li>
-                  <li>
-                    <a class="bullet-a" href="#">Watch: Real Madrid's Pepe Gets Into Valentine's Spirit</a>
-                  </li>
-                  <li>
-                    <a class="bullet-a" href="#">Indonesia Blocking Gay Emojis From Facebook, Whatsapp</a>
-                  </li>
-                  <li>
-                    <a class="bullet-a" href="#">Mourinho and Woodward ‘Cannot Have Spoken’ - Van Gaal</a>
-                  </li>
-                  <li>
-                    <a class="bullet-a" href="#">Rwanda to Relocate Burundian Refugees</a>
-                  </li>
-                  <li>
-                    <div class="see-all">
-                      <button class="see-all-headlines" type="button">See All Headlines</button>
+        <!--putting horizontal divider between main section and sub section-->
+              <hr class="main-horizontal-divider" />
+        <!--starting sub section-->
+              <div class="row">
+              <!--sub-left -->
+                <div class="col-xs-12 col-sm-6 sub-box">
+                  <img src="images/main/main1.png" class="img-responsive">
+                  <div class="sub-info">
+                    <h2>
+                      <a href="#" class="headline-country">U.S.</a>
+                    </h2>
+                    <h2><a href="#" class="headline">GRAVITATIONAL WAVES DETECTED, PROVING EINSTEIN RIGHT</a></h2>
+                    <div class="summary">“This [was] truly a scientific moon shot, and we landed on the moon.”
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+              <!--sub-right -->
+                <div class="col-xs-12 col-sm-6 sub-box" id="sponsor-special">
+                  <div id="background-blue">
+                  <!--set priority for css therefore giving id instead of class-->
+                    <img src="images/main/main2.jpg" class="img-responsive">
+                    <div class="sub-info">
+                      <h2>
+                        <a href="#" class="headline-country blue">SPONSOR INSIGHT</a>
+                      </h2>
+                      <h2><a href="#" class="headline">THE BEST UNIVERSITIES OF ASIA</a>
+                      </h2>
+                      <div class="summary">“Universities from Asia and Europe are challenging the best schools in the USA. When it comes to choosing the right school then, the options have never been more diverse…”
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
               </div>
-            </div>
+
+            <!--Side Menu-->
+            <div class="sidebar col-xs-12 col-md-3">
+              <div class="nav nav-sidebar">
+                <div class="grey-background">
+                  <div class="bullet-list">
+                    <div class="headlines-title">
+                      LATEST HEADLINES
+                    </div>
+                    <ul>
+                      <li class="bullet"><a class="bullet-a" href="#">Harriet Harman: The New Law on Gender Pay was Labour's</a></li>
+                      <li class="bullet"><a class="bullet-a" href="#">French Court Will Hear Facebook Nude Painting Case</a></li>
+                      <li class="bullet"><a class="bullet-a" href="#">Rolf Harris Faces Seven Indecent Assault Charges</a></li>
+                      <li class="bullet"><a class="bullet-a" href="#">U.K. Airbnb Host Rejects Israeli for 'Occupying Lands'</a></li>
+                      <li class="bullet"><a class="bullet-a" href="#">Watch: Real Madrid's Pepe Gets Into Valentine's Spirit</a></li>
+                      <li class="bullet"><a class="bullet-a" href="#">Indonesia Blocking Gay Emojis From Facebook, Whatsapp</a></li>
+                      <li class="bullet"><a class="bullet-a" href="#">Mourinho and Woodward ‘Cannot Have Spoken’ - Van Gaal</a></li>
+                      <li class="bullet"><a class="bullet-a" href="#">Rwanda to Relocate Burundian Refugees</a></li>
+                      <li class="bullet">
+                        <div class="see-all">
+                          <button class="see-all-headlines" type="button" class="btn btn-default">See All Headlines</button>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
           </div>
-
-          <div class="row">
-          </div>
-
 
         </div>
       </div>
     </div>
 
 
-    <!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript 
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
