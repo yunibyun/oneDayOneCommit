@@ -1,0 +1,22 @@
+/* declaring variables */
+body {
+
+    --white: #ffffff;
+    font-size: 18px;
+}
+
+
+/* working with header */
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: var(--white);
+    width: 100%;
+    padding: 15px;
+    /* setting the header bar to fixed position */
+    position: fixed;
+}
+
+
