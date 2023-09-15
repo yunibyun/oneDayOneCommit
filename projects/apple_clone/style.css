@@ -43,12 +43,12 @@ body {
 
 /* header */
 header {
-  max-width: 100vw;
+  width: 100%;
   background-color: #28282B;
   height: 44px;
 }
 header .nav-wrapper {
-  max-width: 36vw;
+  width: 36%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -96,7 +96,7 @@ main .main-wrapper .col-3 a:visited {
 main .main-wrapper .col-4 {
   background: url("../images/hero_iphone_13pro.jpg") center no-repeat;
   height: 600px;
-  width: 100vw;
+  width: 100%;
   margin-top: -200px;
   z-index: -2;
 }
@@ -129,7 +129,7 @@ footer {
   letter-spacing: 0;
 }
 footer .footer-wrapper {
-  max-width: 33vw;
+  max-width: 33%;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -198,6 +198,7 @@ footer .footer-info-wrapper .col-2 .policy-links a {
 }
 footer .footer-info-wrapper .col-2 .policy-links a:last-child {
   border-right: none;
+  margin-right: 150px;
 }
 footer .footer-info-wrapper .col-2 .policy-links a:hover {
   text-decoration: underline;
@@ -206,7 +207,10 @@ footer .footer-info-wrapper .col-2 .policy-links a:visited {
   color: #666;
 }
 footer .footer-info-wrapper .col-2 .country {
-  align-items: flex-end;
+  display: inline-flex;
+}
+footer .footer-info-wrapper .col-2 .country .flag {
+  padding-right: 5px;
 }
 footer .footer-info-wrapper .col-2 .country a {
   text-decoration: none;
