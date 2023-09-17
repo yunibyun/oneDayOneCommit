@@ -1,4 +1,90 @@
-a {
-    color: #222;
+body {
+    margin: 0 auto;
+    --main-color: #222;
+    line-height: 1.5;
+}
+
+
+/* working with navigation bar */
+
+nav {
+    line-height: 60px;
+}
+
+.news {
+    font-size: 24px;
+}
+
+.navbar a:hover {
     text-decoration: none;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #f2f2f2;
+    border-radius: 8px; 
+}
+
+.navbar-brand {
+    margin-right: 3px;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.navbar-collapse {
+    padding: 5px;
+    margin-right: 50px;
+}
+.navbar a {
+    color: var(--main-color);
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link { 
+    color: var(--main-color);
+    font-weight: 500;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--light-grey-bg);
+    border-radius: 8px;
+}
+
+
+/********** horizontal line **********/
+hr {
+    margin: 1px 0px;
+}
+
+
+
+.container-fluid .row {
+    padding: 80px;
+    align-items: center;
+}
+
+#hero-img {        
+    overflow: hidden;
+}
+
+.date {
+    font-size: 12.8px;
+    padding-bottom: 10px;
+    color: #6c757d !important;
+}
+
+.headline {
+    font-size: 40px;
+    line-height: 1.15;
+}
+.read-more {
+    background-color: #e31c5f;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    height: 48px;
+    width: 129px;
+    margin-top: 20px;
 }
