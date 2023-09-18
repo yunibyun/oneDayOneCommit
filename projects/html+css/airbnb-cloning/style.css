@@ -25,10 +25,12 @@ nav {
     border-radius: 8px; 
 }
 
+.navbar-brand-wrapper {
+    margin-left: 50px;
+}
 .navbar-brand {
     margin-right: 3px;
     padding: 5px;
-    margin-left: 50px;
 }
 
 .navbar-collapse {
@@ -59,6 +61,8 @@ hr {
 }
 
 
+/* main */
+/* working with hero section */
 
 .container-fluid .row {
     padding: 80px;
