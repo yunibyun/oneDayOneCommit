@@ -64,7 +64,7 @@ hr {
 /* main */
 /* working with hero section */
 
-.container-fluid .row {
+.container-fluid .wrapper {
     padding: 80px;
     align-items: center;
 }
