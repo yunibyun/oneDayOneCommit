@@ -302,7 +302,9 @@ li a:hover {
 
 
 @media (max-width: 745px) {
-
+    .news {
+        font-weight: 400;
+    }
     .navbar-brand-wrapper {
         margin-left: 24px;
     }
@@ -356,10 +358,6 @@ li a:hover {
 
     .footer-wrapper {
         padding: 24px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
     }
 
     .disclaimer-wrapper {
