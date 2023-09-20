@@ -93,7 +93,6 @@ hr {
 .headline a {
     font-size: 40px;
     font-weight: 600;
-    line-height: 1.15;
     color: var(--main-color);
 }
 .read-more {
@@ -134,3 +133,12 @@ h3 a {
 }
 
 /* working with the third-section, one of a kind stays */
+
+.aspectRatioBox {
+    background-size: cover;
+    background-position: center;
+    padding-top: calc(2 / 3 * 100%);
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
