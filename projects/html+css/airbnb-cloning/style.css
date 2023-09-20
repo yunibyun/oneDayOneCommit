@@ -2,7 +2,6 @@ body {
     margin: 0 auto;
     font-family: "mundial", sans-serif;
     --main-color: #222;
-    line-height: 1.5;
     letter-spacing: -0.75px;
 }
 
@@ -75,7 +74,7 @@ hr {
 /* working with hero section */
 
 .container-fluid .wrapper {
-                padding: 80px;
+    padding: 80px;
     align-items: center;
 }
 
@@ -110,6 +109,13 @@ hr {
 }
 
 
+@media (max-width: 889px) {
+    .headline a {
+        font-size: 26px;
+    }
+}
+
+
 /* working with the sub-hero section */
 
 .headline {
@@ -134,11 +140,37 @@ h3 a {
 
 /* working with the third-section, one of a kind stays */
 
-.aspectRatioBox {
-    background-size: cover;
+.third-content-wrapper {
+    padding: 0px 80px;
+    max-width: 100%;
+}   
+
+.text-wrapper {
+    margin-bottom: 40px;
+}
+
+.text-wrapper p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.article {
+    max-width: 572px;
+}
+
+.card-img-top {
+    aspect-ratio: auto 730 / 487;
+    overflow: clip;
     background-position: center;
-    padding-top: calc(2 / 3 * 100%);
-    overflow: hidden;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+}
+
+.card-heading {
+    font-size: 22px;
+    color: var(--main-color)
+}
+
+.article a:hover {
+    text-decoration-color: var(--main-color) !important;
 }
