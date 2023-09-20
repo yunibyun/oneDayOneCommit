@@ -293,11 +293,38 @@ li a:hover {
 
 /* making the page responsive */
 
-@media (max-width: 889px) {
+@media only screen and (min-width: 745px) and (max-width: 1124px) {
+    .news {
+        font-weight: 400;
+    }
+    
+
+    .container-fluid .wrapper {
+        padding: 40px;
+    }
+
+    .navbar-brand-wrapper {
+        margin-left: 40px;
+    }
+
+    .headline {
+        font-weight: 400;
+        font-size: 26px;
+    }
     .headline a {
         font-size: 26px;
         font-weight: 400;
     }
+
+    h3 a {
+        font-size: 24px;
+    }
+
+    small {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }   
+
 }
 
 
@@ -309,7 +336,7 @@ li a:hover {
         margin-left: 24px;
     }
     .container-fluid .wrapper {
-        padding: 24px;
+        padding: 24px
     }
     
     .rounded {
