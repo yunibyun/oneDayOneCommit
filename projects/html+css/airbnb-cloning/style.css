@@ -321,10 +321,30 @@ li a:hover {
     }
 
     small {
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }   
 
+    #stays {
+        padding: 40px 0px;
+    }
+
+    .third-content-wrapper {
+        padding: 0px 40px;
+    }
+
+    .headline-wrap {
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+    
+    .footer-wrapper {
+        padding: 40px;
+    }
+
+    .disclaimer-wrapper {
+        padding: 0px 0px 40px 55px;
+    }
 }
 
 
