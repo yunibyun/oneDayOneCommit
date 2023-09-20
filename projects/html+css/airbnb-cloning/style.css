@@ -23,7 +23,6 @@ nav {
 
 .navbar a:hover {
     text-decoration: none;
-
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -79,7 +78,7 @@ hr {
 }
 
 #hero-img {        
-    overflow: hidden;
+    overflow: clip;
 }
 
 .date {
@@ -109,11 +108,6 @@ hr {
 }
 
 
-@media (max-width: 889px) {
-    .headline a {
-        font-size: 26px;
-    }
-}
 
 
 /* working with the sub-hero section */
@@ -134,11 +128,43 @@ h3 a {
     line-height: 1.2 !important;
 }
 
+h3 a:hover {
+    color: var(--main-color)
+}
+
 .col-6 {
     padding: 10px;
 }
 
+@media (max-width: 889px) {
+    .sub-contents-wrapper {
+        flex-direction: column;
+        }
+
+    .sub-inside-wrapper {
+        flex-direction: row;
+    }
+
+    .headline {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    main .d-flex {
+        flex-direction: column;
+    }
+
+    h3 a {
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+
 /* working with the third-section, one of a kind stays */
+
+#stays {
+    padding: 60px 0px;
+}
 
 .third-content-wrapper {
     padding: 0px 80px;
@@ -152,6 +178,7 @@ h3 a {
 .text-wrapper p {
     font-size: 20px;
     font-weight: 200;
+    padding-top: 20px;
 }
 
 .article {
@@ -166,11 +193,187 @@ h3 a {
     border-top-right-radius: 12px;
 }
 
+.card-body div {
+    padding-bottom: 10px;
+}
 .card-heading {
     font-size: 22px;
-    color: var(--main-color)
+    color: var(--main-color);
+    padding-bottom: 10px;
 }
 
 .article a:hover {
     text-decoration-color: var(--main-color) !important;
+}
+
+
+/* fourth section, what makes airbnb */
+
+.headline-wrap {
+    padding-left: 60px;
+}
+
+.headline-wrap p {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.read-more-end {
+    background-color: #ffffff;
+    border: 1px solid var(--main-color);
+    border-radius: 12px;
+    color: var(--main-color);
+    height: 48px;
+    width: 129px;
+    margin-top: 30px;
+}
+
+
+/* footer */
+
+.footer-wrapper {
+    padding: 40px 80px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding-bottom: 15px;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+li a {
+    color: var(--main-color);
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 0px !important;
+}
+
+li a:hover {
+    color: var(--main-color);
+}
+
+.disclaimer-wrapper {
+    padding: 0px 0px 40px 95px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 1.15;
+}
+
+
+.disclaimer-text {
+    font-weight: 200;
+}
+
+.footer-link {
+    margin-right: 25px;
+    font-weight: 200;
+    font-size: 14px;
+}
+.fa-brands {
+    padding-right: 5px;
+}
+
+@media (max-width: 1127px)  {
+    .footer-wrapper & d-flex {
+        flex-wrap: nowrap;
+    }
+    
+    .footer-lists ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* making the page responsive */
+
+@media (max-width: 889px) {
+    .headline a {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+
+
+@media (max-width: 745px) {
+
+    .navbar-brand-wrapper {
+        margin-left: 24px;
+    }
+    .container-fluid .wrapper {
+        padding: 24px;
+    }
+    
+    .rounded {
+        border-radius: 10px;
+    }
+
+    small {
+        margin-bottom: 20px;
+    }
+    #hero-img {
+        padding-bottom: 20px;
+    }
+    .read-more {
+        font-size: 14px;
+        height: 37px;
+        width: 100px;
+        border-radius: 6px;
+        margin-top: 25px;
+    }
+
+    #stays {
+        padding: 24px 0px;
+    }
+
+    .third-content-wrapper {
+        padding: 0px 24px;
+    }
+
+    .headline-wrap {
+        padding-left: 24px;
+        padding-top: 24px;
+        text-align: center;
+    }
+
+    .image-wrap {
+        padding: 0px;
+    }
+
+    .read-more-end {
+        font-size: 14px;
+        height: 37px;
+        width: 100px;
+        border-radius: 6px;
+        margin-top: 25px;
+    }
+
+    .footer-wrapper {
+        padding: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .disclaimer-wrapper {
+        padding: 0px 0px 24px 35px;
+    }
+
+    .footer-lists ul {
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .footer-logos {
+        display: block;
+        text-align: center;
+    }
+
 }
