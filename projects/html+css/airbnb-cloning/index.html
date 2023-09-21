@@ -89,11 +89,11 @@
             <div class="container-fluid d-flex">
                 <div class="row wrapper">
                 <!--Here comes hero-img-->
-                    <div class="col-12 col-md-7 order-md-2">
+                    <div class="col-12 col-md-7 order-md-2 px-0">
                         <img src="/assets/hero-img.jpg" alt="hero-img" class="img-fluid w-100 rounded" id="hero-img">
                     </div>
                     <!--Here comes hero-text-->
-                    <div class="col-12 col-md-5 order-md-1">
+                    <div class="col-12 col-md-5 order-md-1 px-0">
                         <small class="m-0 date">September 12, 2023</small>
                         <h1 class="headline"> <a href="#">Spend the night in House of Sunny’s latest collection, now on Airbnb</a></h1>
                         <button class="read-more">Read more</button>
@@ -102,7 +102,7 @@
             </div>
         
             <!--working with the sub-hero section-->
-            <div class="container-fluid d-flex sub-hero">
+            <div class="container-fluid d-flex" id="sub-hero">
                 <div class="wrapper">
                     <h3 class="headline">Latest news</h3>
                     <div class="row sub-contents-wrapper">
@@ -255,7 +255,7 @@
                                     </div>
                                 </div>
                             </a>                       
-                         </div>
+                        </div>
 
                     </div>
                 </div>
@@ -283,46 +283,53 @@
         <footer class="bg-light">
             <div class="container-fluid">
                 <div class="row footer-wrapper d-flex">
-                    <div class="col-12 col-md-4 footer-lists">
+                    <div class="col-xl-4 col-lg-12 footer-lists">
                         <h5 class="list-heading">Support</h5>
-                        <ul>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">AirCover</a></li>
-                            <li><a href="#">Anti-discrimination</a></li>
-                            <li><a href="#">Disability support</a></li>
-                            <li><a href="#">Cancellation options</a></li>
-                            <li><a href="#">Report neighborhood concern</a></li>
+                        <ul class="row">
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Help Center</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">AirCover</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Anti-discrimination</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Disability support</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Cancellation options</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Report neighborhood concern</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-12 col-md-4 footer-lists">
+                    <hr class="d-xl-none">
+
+                    <div class="col-xl-4 col-lg-12 footer-lists">
                         <h5 class="list-heading">Hosting</h5>
-                        <ul>
-                            <li><a href="#">Airbnb your home</a></li>
-                            <li><a href="#">AirCover for Hosts</a></li>
-                            <li><a href="#">Hosting resources</a></li>
-                            <li><a href="#">Community forum</a></li>
-                            <li><a href="#">Hosting responsibility</a></li>
-                            <li><a href="#">Airbnb-friendly apartments</a></li>
+                        <ul class="row">
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Airbnb your home</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">AirCover for Hosts</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Hosting resources</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Community forum</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Hosting responsibility</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Airbnb-friendly apartments</a></li>
                         </ul>
                     </div>
 
-                    <div class="col-12 col-md-4 footer-lists">
+                    <hr class="d-xl-none">
+
+                    <div class="col-xl-4 col-lg-12 footer-lists">
                         <h5 class="list-heading">Airbnb</h5>
-                        <ul>
-                            <li><a href="#">Newsroom</a></li>
-                            <li><a href="#">New features</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Investors</a></li>
-                            <li><a href="#">Gift cards</a></li>
-                            <li><a href="#">Airbnb.org emergency stays</a></li>
+                        <ul class="row">
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Newsroom</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">New features</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Careers</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Investors</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Gift cards</a></li>
+                            <li class="col-xl-12 col-lg-4 col-md-12"><a href="#">Airbnb.org emergency stays</a></li>
                         </ul>
                     </div>
+
+                    <hr class="d-xl-none">
+
                 </div>
             </div>
 
             <div class="row disclaimer-wrapper">
-                <div class="col-12 col-md-7 disclaimer">
+                <div class="col-lg-7 col-md-12 disclaimer">
                     <ul>
                         <li>Disclaimer</li>
                         <li class="disclaimer-text">The Airbnb News is aimed at journalists. All Homes and Experiences referenced on the Airbnb Newsroom are intended purely to inspire and illustrate. Airbnb does not recommend or endorse specific Home or Experience listings on the Airbnb platform.</li>
@@ -330,25 +337,27 @@
                 </div>
             
             </div>
+            
+            <!--horizontal line between the footer-link section and copyright section-->
             <hr>
+
             <div class="container-fluid">
                 <div class="row footer-wrapper">
-                    <div class="col-md-12 d-flex justify-content-between">
-                        <div class="footer-paragraph order-md-2">
+                        <div class="col-xl-3 col-lg-12 order-xl-1 order-lg-3 order-md-3 order-sm-3 footer-paragraph">
                             <p class="footer-link">© 2023 Airbnb, Inc. All rights reserved</p>
                         </div>
-                        <div class="footer-copyright-list order-md-3">
+                        <div class="col-xl-3 col-lg-12 order-xl-2 order-lg-2 order-md-2 order-sm-2 footer-copyright-list col-lg-auto">
                             <ul class="footer-links d-inline-flex">
                                 <li class="footer-link"><a href="#">Privacy</a></li>
                                 <li class="footer-link"><a href="#">Terms</a></li>
                                 <li class="footer-link"><a href="#">Sitemap</a></li>
-                               </ul>
+                            </ul>
                         </div>
-                        <div class="footer-logos order-md-1">
-                            <a href="#"><i class="fa-brands fa-twitter fa-2xl" style="color: #222222;"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #222222;"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color: #222222;"></i></a>
-                            <a href="#"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #222222;"></i></a>
+                        <div class="col-xl-3 col-lg-12 order-xl-3 order-lg-1 order-md-1 order-sm-1 footer-logos col-lg-auto ml-lg-auto">
+                            <a href="#"><i class="fa-brands fa-twitter fa-lg" style="color: #222222;"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #222222;"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin fa-lg" style="color: #222222;"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-facebook fa-lg" style="color: #222222;"></i></a>
                         </div>
                     </div>
                 </div>
