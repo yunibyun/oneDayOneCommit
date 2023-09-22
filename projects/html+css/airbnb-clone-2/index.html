@@ -16,7 +16,7 @@
   <!--Working with the navigation bar-->
   <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex shadow-sm">
     <!--in Bootstrap v5, it is required to have a container <div> inside the <nav> -->
-    <div class="container-fluid">
+    <div class="container-xxl">
       <a href="#" class="navbar-brand text-danger"><i class="fab fa-airbnb"></i>airbnb</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +51,124 @@
 
       </div>
     </div>
-
   </nav>
+
+  <!--Working with the main content-->
+  <main>
+    <div class="container-xxl">
+      <h3 class="my-4">New this week</h3>
+      <!--스크롤 되고 밑줄로 넘어가지 않도록 flex-nowrap 설정. 넘치는건 스크롤할수 있도록 overflow-scroll 설정 -->
+      <div class="row flex-nowrap overflow-scroll">
+        <!--first card-->
+        <div class="col-11 col-sm-9 col-md-8 col-lg-5">
+          <div class="rounded-3 text-white collection position-relative">
+            <div class="p-3 d-flex flex-column align-items-start position-absolute inner">
+              <p class="mb-0"><small>Collection</small></p>
+              <h4 class="mb-auto">Plan a trip with tips from a local</h4>
+              <button class="btn btn-sm rounded-3 btn-light">Show all</button>
+            </div>
+          </div>
+        </div>
+        <!--second card-->
+        <div class="col-11 col-sm-9 col-md-8 col-lg-5">
+          <div class="rounded-3 text-white collection position-relative">
+            <div class="p-3 d-flex flex-column align-items-start position-absolute inner">
+              <p class="mb-0"><small>Collection</small></p>
+              <h4 class="mb-auto">Most popular around the world</h4>
+              <button class="btn btn-sm rounded-3 btn-light">Show all</button>
+            </div>
+          </div>
+        </div>
+        <!--third card-->
+        <div class="col-11 col-sm-9 col-md-8 col-lg-5">
+          <div class="rounded-3 text-white collection position-relative">
+            <div class="p-3 d-flex flex-column align-items-start position-absolute inner">
+              <p class="mb-0"><small>Collection</small></p>
+              <h4 class="mb-auto">Easy for itinary planning</h4>
+              <button class="btn btn-sm rounded-3 btn-light">Show all</button>
+            </div>
+          </div>
+        </div>
+        <!--fourth card-->
+        <div class="col-11 col-sm-9 col-md-8 col-lg-5">
+          <div class="rounded-3 text-white collection position-relative">
+            <div class="p-3 d-flex flex-column align-items-start position-absolute inner">
+              <p class="mb-0"><small>Collection</small></p>
+              <h4 class="mb-auto">Great for team building</h4>
+              <button class="btn btn-sm rounded-3 btn-light">Show all</button>
+            </div>
+          </div>
+        </div>
+        <!--fifth card-->
+        <div class="col-11 col-sm-9 col-md-8 col-lg-5">
+          <div class="rounded-3 text-white collection position-relative">
+            <div class="p-3 d-flex flex-column align-items-start position-absolute inner">
+              <p class="mb-0"><small>Collection</small></p>
+              <h4 class="mb-auto">Fun for the family</h4>
+              <button class="btn btn-sm rounded-3 btn-light">Show all</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!--working with filters-->
+      <ul class="nav nav-pills pt-4 pb-2 flex-nowrap overflow-scroll experience-filter">
+        <li class="nav-item">
+          <a class="nav-link border border-secondary py-1 rounded-pill text-dark me-2" href="#">Filters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border border-secondary py-1 rounded-pill text-dark me-2" href="#">Dates</a>
+        </li>
+        <li class="nav-item border-end border-secondary me-2">
+          <a class="nav-link border border-secondary py-1 rounded-pill text-dark me-2" href="#">Group size</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Great for groups</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Family friendly</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Animals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Arts & writing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Baking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Cooking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Dance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Drinks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Entertainment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Fitness</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">History & culture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Magic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-light border border-light py-1 rounded-pill text-dark me-2">Social impact</a>
+        </li>
+      </ul>
+    </div>
+    <hr/>
+  </main>
+
 
 
   <!--Javascript bundle with Popper-->
