@@ -236,7 +236,7 @@ li a:hover {
 }
 
 .disclaimer-wrapper {
-    padding: 0px 0px 40px 95px;
+    padding: 0px 0px 30px 80px;
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 1.15;
@@ -320,7 +320,7 @@ li a:hover {
     }
 
     .disclaimer-wrapper {
-        padding: 0px 0px 40px 55px;
+        padding: 0px 0px 20px 40px;
     }
 }
 
@@ -405,7 +405,7 @@ li a:hover {
     }
 
     .disclaimer-wrapper {
-        padding: 0px 0px 24px 35px;
+        padding: 0px 24px;
     }
 
 
