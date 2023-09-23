@@ -1,0 +1,26 @@
+/* Importing font */
+@font-face {
+  font-family: "PP Neue Montreal Mono", monospace;
+  src: url(/assets/PPNeueMontrealMono-Regular.woff2);
+}
+
+/* Declaring Variables */
+body {
+  --accent-color: #1a1a1a;
+  --primary-color: #fffdf8;
+  font-family: "PP Neue Montreal Mono", monospace;
+  font-size: 14px;
+}
+
+
+/* header */
+.header-navigaton {
+  position: fixed;
+  z-index: 2;
+}
+
+.header-wrapper {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  padding: 10px;
+}
