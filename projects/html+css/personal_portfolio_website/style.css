@@ -67,6 +67,32 @@ main {
   aspect-ratio: 1 / 1.4;
 }
 
+/* third section */
+
+.third-img {
+  background-image: url(/assets/alt_poster.png);
+  padding-top: calc(8.27 / 11.69 * 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 760px;
+  aspect-ratio: 1 / 1.4;
+}
+
+
+/* fourth section */
+.fourth-img {
+  background-image: url(/assets/ws_poster.png);
+  padding-top: calc(8.27 / 11.69 * 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 760px;
+  aspect-ratio: 1 / 1.4;
+}
+
+/* making things responsible */
+
 @media (max-width: 768px) {
   body {
     font-size: 10px;
@@ -87,6 +113,7 @@ main {
 }
 
 /* footer */
+
 footer {
   color: var(--primary-color);
   background-color: var(--accent-color);
