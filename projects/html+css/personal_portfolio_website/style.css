@@ -43,6 +43,47 @@ main {
   background-size: cover;
   background-position: center;
 }
+
+
+/* second section */
+
+.sub-hero-img-1{
+  background-image: url(/assets/read_front.png);
+  padding-top: calc(8.27 / 11.69 * 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 760px;
+}
+
+.sub-hero-img-2 {
+  background-image: url(/assets/read_back.png);
+  padding-top: calc(8.27 / 11.69 * 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 760px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  .second-images-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+.title-info-box {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
 /* footer */
 footer {
   color: var(--primary-color);
