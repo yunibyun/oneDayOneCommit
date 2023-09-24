@@ -14,13 +14,38 @@ body {
 
 
 /* header */
+header {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+
 .header-navigaton {
   position: fixed;
   z-index: 2;
-}
-
-.header-wrapper {
-  color: var(--primary-color);
-  background-color: var(--accent-color);
   padding: 10px;
 }
+
+.nav-link {
+  color: var(--primary-color) !important;
+}
+
+
+/* main */
+/* hero section */
+
+main {
+  background-color: var(--primary-color);
+}
+
+.hero-img {
+  background-image: url(/assets/read_read_read_desktop.png);
+  padding-top: calc(62.5 / 100 * 100%);
+  background-size: cover;
+  background-position: center;
+}
+/* footer */
+footer {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+
