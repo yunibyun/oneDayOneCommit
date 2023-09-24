@@ -47,24 +47,20 @@ main {
 
 /* second section */
 
-.sub-hero-img-1{
-  background-image: url(/assets/read_front.png);
-  padding-top: calc(8.27 / 11.69 * 100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  max-height: 760px;
-  aspect-ratio: 1 / 1.4;
+.sub-img-container {
+  max-width: 603px;
 }
 
-.sub-hero-img-2 {
-  background-image: url(/assets/read_back.png);
-  padding-top: calc(8.27 / 11.69 * 100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  max-height: 760px;
-  aspect-ratio: 1 / 1.4;
+.sub-img-container .sub-hero-img-1 {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
+
+.sub-img-container .sub-hero-img-2 {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
 }
 
 /* third section */
@@ -75,7 +71,6 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-height: 760px;
   aspect-ratio: 1 / 1.4;
 }
 
@@ -87,7 +82,6 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-height: 760px;
   aspect-ratio: 1 / 1.4;
 }
 
