@@ -51,40 +51,69 @@ main {
   max-width: 603px;
 }
 
-.sub-img-container .sub-hero-img-1 {
+
+.sub-img-container img {
   max-width: 100%;
   max-height: 100%;
   object-fit: scale-down;
 }
 
-.sub-img-container .sub-hero-img-2 {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: scale-down;
+.horizontal-line {
+  border-bottom: 1px solid var(--accent-color);
 }
 
 /* third section */
 
-.third-img {
-  background-image: url(/assets/alt_poster.png);
-  padding-top: calc(8.27 / 11.69 * 100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  aspect-ratio: 1 / 1.4;
+.third-img-container {
+  max-width: 603px;
+}
+
+.third-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
 }
 
 
 /* fourth section */
-.fourth-img {
-  background-image: url(/assets/ws_poster.png);
-  padding-top: calc(8.27 / 11.69 * 100%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  aspect-ratio: 1 / 1.4;
+
+.fourth-img-container {
+  max-width: 603px;
 }
 
+.fourth-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
+
+
+/* fifth section beyond the canon */
+.fifth-img {
+  background-image: url(/assets/byd_the_canon.png);
+  padding-top: calc(854 / 1280 * 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+/* sixth section the debate */
+.six-img-container {
+  max-width: 603px;
+}
+
+
+.six-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+}
+
+/* last section */
+
+.bottom-txt-wrapper div p a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
 /* making things responsible */
 
 @media (max-width: 768px) {
@@ -96,7 +125,6 @@ main {
     display: flex;
     flex-wrap: wrap;
   }
-
 }
 
 
