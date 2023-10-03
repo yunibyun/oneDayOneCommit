@@ -83,4 +83,44 @@ function digitize(n) {
 }
 
 
+/*
+Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+*/
 
+const smash = (arr) => {
+  return arr.join(' ');
+}
+
+/*
+Find the smallest integer in the array
+
+Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+*/
+
+// 이걸 더 줄여서
+/*
+findSmallestInt (args) {
+    return args.sort((a, b) => a-b)[0];
+}
+으로 만들수도 있음 
+*/
+
+findSmallestInt(args) {
+  args.sort((a, b) => a - b);
+  return args[0];
+}
+
+
+
+// 다른 사람 답안
+findSmallestInt(args) {
+  return Math.min(...args)
+}
