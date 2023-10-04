@@ -417,13 +417,14 @@ function tripleSequence(start, length) {
 /*
 Unique
 
-Write a function unique that accepts an array as an argument. The function should return a new array containing elements of the input array, without duplicates.
+Write a function unique that accepts an array as an argument. 
+The function should return a new array containing elements of the input array, without duplicates.
 */
 
 /*
 1. write a function accepts an arg (arr)
 2. create a loop searching from first index of the arr
-  2.1 create a loop inside of loop, in order to search duplicate element
+  2.1 create a loop inside of loop, in order to search duplicate element (searching from second index)
   2.2 make an if statement if there's, then splice the element from the array
 3. return arr
 */
@@ -436,14 +437,21 @@ Write a function unique that accepts an array as an argument. The function shoul
     return arr;
 */
 
-const unique = (arr) => {
-  for (i = 0; i < arr.length; i++) {
-    for (j = 1; j < arr.length; j++) {
-      if (arr[i] === arr[j]) {
-        arr.splice(j, 1);
+
+
+// why do the result just omits only the first index?
+
+
+// model answer
+let unique = function(array) {
+  let uniques = [];
+  for (let i = 0; i < array.length; i++) {
+      let el = array[i];
+      if (!uniques.includes(el)) {
+          uniques.push(el);
       }
-    }
-  return arr;
   }
-}
+  return uniques;
+};
+
 
