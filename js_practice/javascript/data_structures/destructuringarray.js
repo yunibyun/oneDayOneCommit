@@ -31,7 +31,7 @@ const restaurant = {
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
   
   order: function(starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex];
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]
   }
 };
 
