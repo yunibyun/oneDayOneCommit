@@ -2,7 +2,13 @@
 
 const bookings = [];
 
-const createBooking = function(flightNumber, numPassengers, price) {
+// setting default parameter 
+// Default value can contain any expression
+const createBooking = function(
+  flightNum, 
+  numPassengers = 1, 
+  price = 199 * numPassengers 
+  ) {
 
   const booking = {
     flightNum,
@@ -11,3 +17,4 @@ const createBooking = function(flightNumber, numPassengers, price) {
   }
   bookings.push(booking);
 }
+
